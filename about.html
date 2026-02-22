@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>About — Jeweling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-cream: #FAF9F6;
+            --color-black: #1A1A1A;
+            --color-gold: #B8956E;
+            --color-gray: #6B6B6B;
+            --color-light-gray: #E8E6E3;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-cream);
+            color: var(--color-black);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: var(--color-black);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--color-gray);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--color-black);
+        }
+
+        .manifesto {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .manifesto-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 2rem;
+        }
+
+        .manifesto h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
+
+        .manifesto-intro {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            color: var(--color-gray);
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .manifesto h2 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 400;
+            margin: 3rem 0 1.5rem;
+        }
+
+        .manifesto p {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            margin-bottom: 1.5rem;
+            color: var(--color-black);
+        }
+
+        .manifesto ul {
+            margin: 1.5rem 0 1.5rem 1.5rem;
+        }
+
+        .manifesto li {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            margin-bottom: 0.75rem;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: var(--color-gold);
+            margin: 4rem 0;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .value {
+            padding: 2rem;
+            background: white;
+        }
+
+        .value h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .value p {
+            font-size: 1rem;
+            color: var(--color-gray);
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 4rem;
+            border-top: 1px solid var(--color-light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            text-decoration: none;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--color-gray);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem 2rem;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .manifesto {
+                padding: 3rem 1.5rem;
+            }
+            
+            .manifesto h1 {
+                font-size: 2.25rem;
+            }
+            
+            .values {
+                grid-template-columns: 1fr;
+            }
+            
+            footer {
+                padding: 2rem;
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">Jeweling</a>
+        <nav>
+            <a href="/craft">Craft</a>
+            <a href="/culture">Culture</a>
+            <a href="/collecting">Collecting</a>
+            <a href="/about" class="active">About</a>
+        </nav>
+    </header>
+
+    <main class="manifesto">
+        <span class="manifesto-label">Our Manifesto</span>
+        
+        <h1>We believe jewelry deserves better storytelling.</h1>
+        
+        <p class="manifesto-intro">
+            The jewelry world is full of extraordinary craft, fascinating history, and remarkable people. But too often, it's presented behind a velvet rope — intimidating, exclusive, and inaccessible. We're here to change that.
+        </p>
+
+        <p>
+            Jeweling is a new kind of publication for people who love jewelry — whether you're a seasoned collector, a curious newcomer, or somewhere in between. We tell stories about craft and culture, makers and movements, history and what's happening right now.
+        </p>
+
+        <p>
+            We believe you don't need to spend six figures to appreciate a beautifully set stone. We believe the person at the bench is as interesting as the piece they create. We believe jewelry intersects with fashion, art, music, and film in ways worth exploring. And we believe you're smart enough to go deep on the details.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>What We Stand For</h2>
+
+        <div class="values">
+            <div class="value">
+                <h3>Craft Over Price Tags</h3>
+                <p>We cover a $300,000 high jewelry piece with the same enthusiasm as a $3,000 independent designer ring. It's about the work, not the zeros.</p>
+            </div>
+            
+            <div class="value">
+                <h3>Open Doors, Not Velvet Ropes</h3>
+                <p>Jewelry has an intimidation problem. We're here to fix that — inviting readers in, not keeping them out.</p>
+            </div>
+            
+            <div class="value">
+                <h3>Stories, Not Catalogs</h3>
+                <p>We lead with the human — the maker, the collector, the moment. Products serve the story, never the other way around.</p>
+            </div>
+            
+            <div class="value">
+                <h3>Culturally Connected</h3>
+                <p>Jewelry doesn't exist in isolation. We explore its intersections with fashion, art, music, film, and the broader cultural moment.</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>What You'll Find Here</h2>
+
+        <ul>
+            <li><strong>Atelier visits</strong> — Inside the workshops where extraordinary pieces come to life</li>
+            <li><strong>Maker profiles</strong> — Conversations with designers, craftspeople, and industry voices</li>
+            <li><strong>Cultural deep-dives</strong> — Jewelry's role in fashion, music, film, and beyond</li>
+            <li><strong>Collecting guides</strong> — Smart advice for building a meaningful collection</li>
+            <li><strong>Market intelligence</strong> — Auction previews, trends, and investment perspectives</li>
+            <li><strong>Historical pieces</strong> — The stories behind iconic jewels and jewelry moments</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>Join Us</h2>
+
+        <p>
+            Jeweling is just getting started. We're building something for people who believe jewelry is more than an accessory — it's craft, it's culture, it's personal history worn on the body.
+        </p>
+
+        <p>
+            If that sounds like you, welcome. We're glad you're here.
+        </p>
+
+        <p style="margin-top: 3rem;">
+            <em>— The Jeweling Team</em>
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-logo">Jeweling</div>
+        <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy</a>
+        </div>
+        <div class="footer-copy">© 2026 Jeweling. All rights reserved.</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Inside the Atelier: 400 Hours to Set a Single Bracelet — Jeweling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-cream: #FAF9F6;
+            --color-black: #1A1A1A;
+            --color-gold: #B8956E;
+            --color-gray: #6B6B6B;
+            --color-light-gray: #E8E6E3;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-cream);
+            color: var(--color-black);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: var(--color-black);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--color-gray);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: var(--color-black);
+        }
+
+        /* Article Header */
+        .article-header {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .article-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .article-title {
+            font-family: var(--font-serif);
+            font-size: 3.25rem;
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-gray);
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            color: var(--color-gray);
+        }
+
+        .article-meta span {
+            margin: 0 0.75rem;
+        }
+
+        /* Hero Image */
+        .article-hero {
+            width: 100%;
+            height: 70vh;
+            background: linear-gradient(135deg, #D4C5B5 0%, #E8DDD0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray);
+            margin-bottom: 4rem;
+        }
+
+        /* Article Content */
+        .article-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .article-content p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 1.75rem;
+        }
+
+        .article-content p:first-of-type::first-letter {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            padding-top: 0.25rem;
+            color: var(--color-gold);
+        }
+
+        .article-content h2 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 400;
+            margin: 3rem 0 1.5rem;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid var(--color-gold);
+            padding-left: 2rem;
+            margin: 2.5rem 0;
+            font-style: italic;
+            color: var(--color-gray);
+        }
+
+        .article-content blockquote p {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content blockquote cite {
+            font-size: 0.9rem;
+            font-style: normal;
+        }
+
+        .inline-image {
+            width: 100%;
+            margin: 3rem 0;
+            background: linear-gradient(135deg, #E0D5C7 0%, #D4C5B5 100%);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            margin-top: -2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Pull Quote */
+        .pull-quote {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            line-height: 1.4;
+            text-align: center;
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-top: 1px solid var(--color-light-gray);
+            border-bottom: 1px solid var(--color-light-gray);
+            color: var(--color-black);
+        }
+
+        /* Author Box */
+        .author-box {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: white;
+            margin-top: 4rem;
+        }
+
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--color-light-gray);
+        }
+
+        .author-info h4 {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .author-info p {
+            font-size: 0.9rem !important;
+            color: var(--color-gray);
+            margin-bottom: 0 !important;
+        }
+
+        /* Related Articles */
+        .related {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--color-light-gray);
+        }
+
+        .related h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .related-card {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .related-card-image {
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, #E0D5C7 0%, #D4C5B5 100%);
+            margin-bottom: 1rem;
+        }
+
+        .related-card-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            line-height: 1.3;
+        }
+
+        footer {
+            padding: 4rem;
+            border-top: 1px solid var(--color-light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            text-decoration: none;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--color-gray);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem 2rem;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .article-title {
+                font-size: 2.25rem;
+            }
+            
+            .article-hero {
+                height: 50vh;
+            }
+            
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            footer {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">Jeweling</a>
+        <nav>
+            <a href="/craft">Craft</a>
+            <a href="/culture">Culture</a>
+            <a href="/collecting">Collecting</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="article-header">
+            <span class="article-label">Craft</span>
+            <h1 class="article-title">Inside the Atelier: 400 Hours to Set a Single Bracelet</h1>
+            <p class="article-subtitle">We spent three days in the Van Cleef & Arpels high jewelry workshop in Paris, watching master craftsmen bring a $2 million piece to life — one stone at a time.</p>
+            <div class="article-meta">
+                <span>By Sarah Chen</span>
+                <span>•</span>
+                <span>February 20, 2026</span>
+                <span>•</span>
+                <span>12 min read</span>
+            </div>
+        </div>
+
+        <div class="article-hero">
+            [Hero Image: Master jeweler's hands working under magnification, natural light from Parisian window]
+        </div>
+
+        <article class="article-content">
+            <p>The room is quieter than you'd expect. Six craftspeople sit at wooden benches arranged in a U-shape, each one hunched over their work, tools moving with a precision that looks almost meditative. Natural light floods in from tall windows overlooking Place Vendôme — the same windows, I'm told, that have illuminated this work for over a century.</p>
+
+            <p>I'm inside the Van Cleef & Arpels high jewelry atelier, a space that even most industry insiders never see. My guide is Philippe, a maître d'art who has worked here for thirty-four years. He speaks softly, partly out of respect for the concentration around us, partly because that's simply how things are done here.</p>
+
+            <p>"The piece you're looking at," he says, gesturing toward a bench where a woman is working, "she's been on it for two months. Perhaps another two to finish."</p>
+
+            <p>The piece is a bracelet, though calling it that feels inadequate. It's a flexible cuff featuring 847 diamonds of varying cuts — brilliant, marquise, pear — arranged in a pattern that suggests flowing water. When complete, it will sell for somewhere north of $2 million. But right now, it's a work in progress, and watching it come together is like watching a painter build an image brushstroke by brushstroke.</p>
+
+            <h2>The Patience Required</h2>
+
+            <p>High jewelry operates on a timeline that feels almost absurd in our age of instant everything. The bracelet I'm watching will require approximately 400 hours of hands-on work. That's ten weeks of full-time labor for a single piece, assuming no mistakes, no recalibrations, no moments where something doesn't sit quite right and needs to be undone and redone.</p>
+
+            <blockquote>
+                <p>"Speed is never the goal. We're not trying to finish quickly. We're trying to finish correctly."</p>
+                <cite>— Philippe, Maître d'Art</cite>
+            </blockquote>
+
+            <p>The woman working on the bracelet is Marie-Claire, and she's been a setter here for eighteen years. Her job, specifically, is to place each stone into its setting with microscopic precision. Too shallow and the stone won't catch light properly. Too deep and it risks cracking under pressure. The tolerance for error is measured in fractions of millimeters.</p>
+
+            <p>"Every stone is different," she tells me during a brief pause. "Even stones that are supposedly the same cut, the same size — they're not. They each have personality. You have to read them."</p>
+
+            <div class="inline-image">[Image: Close-up of hands placing a stone, showing the precision tools]</div>
+            <p class="image-caption">Each stone is placed individually, a process that can take anywhere from several minutes to half an hour depending on the complexity of the setting.</p>
+
+            <p>Read them. It's a phrase I'll hear several times during my visit, this idea that stones — inanimate carbon crystals — have something to communicate. It sounds mystical, but watching Marie-Claire work, you start to understand. She holds each diamond up to the light, rotates it, considers it from multiple angles before deciding on its orientation. The process is part science, part intuition.</p>
+
+            <h2>The Chain of Hands</h2>
+
+            <p>What strikes me most about the atelier is how many different people touch a single piece before it's complete. High jewelry is not the work of one heroic artisan, but rather a relay race of specialized skills.</p>
+
+            <div class="pull-quote">
+                "We don't have rock stars here. We have a team of people who each do one thing better than almost anyone else in the world."
+            </div>
+
+            <p>There's the designer who conceived the piece, working from sketches to gouache paintings to 3D models. There's the wax carver who created the initial form. The metalsmith who cast it. The polisher who prepared the surface. The setter — Marie-Claire — who places each stone. And eventually, the master jeweler who performs final quality control and any last adjustments.</p>
+
+            <p>Each of these specialists has trained for years, often decades. The atelier runs an apprenticeship program that takes three to four years before someone is trusted with client work. Even then, they start with simpler pieces and work their way up. Nobody touches a piece like the 847-diamond bracelet without a minimum of ten years' experience.</p>
+
+            <h2>Why It Matters</h2>
+
+            <p>There's a reasonable question to ask here: In a world of advanced manufacturing, precision machinery, and increasingly capable automation, why does this matter? Why spend 400 hours having a human set stones when machines could do it in a fraction of the time?</p>
+
+            <p>The answers I get are both practical and philosophical.</p>
+
+            <p>Practically, machines can't yet match the nuanced decision-making that Marie-Claire performs with each stone. The "reading" she does — assessing each diamond's individual characteristics and orienting it for maximum beauty — is not something that can be easily reduced to an algorithm. Perhaps someday. But not yet.</p>
+
+            <p>Philosophically, the house's position is that the human touch is intrinsic to what makes high jewelry high jewelry. "Our clients are not buying a product," Philippe tells me. "They're buying a story. Part of that story is that human hands made this. Skilled hands. Decades of training. That means something."</p>
+
+            <p>Whether you find that compelling probably depends on your relationship to luxury goods in general. But standing in the atelier, watching Marie-Claire work, I find myself convinced. There is something different about an object that carries this much human attention. You can't always articulate what it is. But you can feel it.</p>
+
+            <h2>The Finishing</h2>
+
+            <p>Before I leave, Philippe takes me to see a piece that was recently completed — a necklace destined for a Middle Eastern royal family. It sits in a velvet box under glass, and even in the soft light of the viewing room, it throws rainbows onto the walls.</p>
+
+            <p>He lets me hold it, briefly. It's heavier than I expected, and cooler, and somehow more alive. Each stone seems to pulse with captured light. The metalwork that I couldn't even see in photographs reveals itself up close — tiny details of milgrain and engraving that exist purely for the pleasure of whoever wears it.</p>
+
+            <p>"This one was eleven hundred hours," he says. "From first design to finished piece, nearly three years."</p>
+
+            <p>Three years. That's longer than most smartphone product cycles. Longer than most relationships. Longer than many careers in other industries.</p>
+
+            <p>But standing there, holding three years of concentrated human effort in my hands, it starts to make sense. Some things shouldn't be rushed. Some things need to take exactly as long as they take.</p>
+
+            <p>The bracelet Marie-Claire is working on will be finished in two months. Someone, somewhere, will wear it — to a gala, perhaps, or a wedding, or simply for their own private pleasure. They'll feel its weight on their wrist, see the light it catches, and hopefully understand, on some level, what went into making it possible.</p>
+
+            <p>Four hundred hours. 847 diamonds. One master setter reading each stone, one by one.</p>
+
+            <p>That's what craft looks like when you refuse to cut corners.</p>
+
+            <div class="author-box">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                    <h4>Sarah Chen</h4>
+                    <p>Sarah is Jeweling's editor-at-large, covering craft and culture from Paris. Previously at T Magazine and Wallpaper*.</p>
+                </div>
+            </div>
+        </article>
+
+        <section class="related">
+            <h3>Related Reading</h3>
+            <div class="related-grid">
+                <a href="#" class="related-card">
+                    <div class="related-card-image"></div>
+                    <h4 class="related-card-title">The Quiet Rise of Japanese Fine Jewelry</h4>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-card-image"></div>
+                    <h4 class="related-card-title">How Hip-Hop Redefined What Jewelry Could Mean</h4>
+                </a>
+                <a href="#" class="related-card">
+                    <div class="related-card-image"></div>
+                    <h4 class="related-card-title">A Beginner's Guide to Art Deco Jewelry</h4>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">Jeweling</div>
+        <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy</a>
+        </div>
+        <div class="footer-copy">© 2026 Jeweling. All rights reserved.</div>
+    </footer>
+</body>
+</html>
